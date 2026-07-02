@@ -1,7 +1,12 @@
 from openai import OpenAI
 import os
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
+
+print("🤖 AI Chatbot")
+print("Type 'exit' to quit.\n")
 
 while True:
     user = input("You: ")
